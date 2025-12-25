@@ -1,0 +1,44 @@
+Context
+
+This mock meeting represents an initial coordination discussion following the approval of the Vulnerability Management Policy. The purpose of the meeting is to explain the discovery scanning process, address operational and security concerns, and agree on a safe approach for conducting credentialed vulnerability scans within the server environment.
+
+Transcript
+
+Vulnerability Management Lead:
+Good morning. I heard you were ready to conduct some scans.
+
+Server Team Representative:
+Good morning. Yes, now that the vulnerability management policy is in place, we wanted to get started on scheduling credentialed scans of the environment.
+
+Vulnerability Management Lead:
+Sounds good. What’s involved, and how can we help?
+
+Server Team Representative:
+We’re planning to schedule weekly scans of the server infrastructure. We estimate it will take about four to six hours to scan roughly two hundred assets. To perform accurate assessments, we’ll need administrative credentials that allow the scan engine to remotely authenticate to the systems.
+
+Vulnerability Management Lead:
+Hold on for a moment. What does the scanning actually involve? I’m concerned about resource utilization, and providing administrative credentials to all servers doesn’t sound entirely safe.
+
+Server Team Representative:
+Those are valid concerns. The scan engine sends controlled traffic to the servers to check for known vulnerabilities. This includes reviewing configuration settings, checking for outdated software, identifying insecure protocols, and detecting weak cipher suites. Credentials are required to perform these deeper checks accurately.
+
+Vulnerability Management Lead:
+I see. As long as the scans don’t bring any servers offline, we should be okay.
+
+Server Team Representative:
+Absolutely. To be cautious, we can start by scanning a single server and monitor resource utilization before expanding to the rest of the environment.
+
+Vulnerability Management Lead:
+That sounds reasonable.
+
+Server Team Representative:
+For credentials, could you create a dedicated Active Directory account for the scans? The account could remain disabled until scanning begins, then be enabled only for the duration of the scan. Afterward, it could be disabled or deprovisioned. This would function as a just-in-time access approach.
+
+Vulnerability Management Lead:
+That works. I’ll coordinate with the team to start automating the account provisioning process.
+
+Server Team Representative:
+Great. Let’s touch base once the credentials are ready.
+
+Vulnerability Management Lead:
+Sounds good. I’ll follow up once everything is set up.
