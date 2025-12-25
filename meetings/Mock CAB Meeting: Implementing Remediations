@@ -1,0 +1,38 @@
+Context
+
+This mock Change Advisory Board (CAB) meeting represents a formal review of proposed vulnerability remediation changes for the server environment. The purpose of the meeting is to review the technical approach, assess risk, confirm rollback procedures, and obtain approval to proceed with remediation of insecure protocols and cipher suites.
+
+Transcript
+
+CAB Chair:
+Next on the agenda are vulnerability remediation items for the server team. The first is the removal of insecure protocols, and the second is the removal of insecure cipher suites. These efforts are being coordinated between the risk team and the infrastructure team. Would someone like to walk us through the technical aspects of the proposed changes?
+
+Server Team Representative:
+Normally I would, but would you mind letting the risk team lead handle this one? They built the remediation solution, and we’re still getting accustomed to the process.
+
+Risk Management Representative:
+I can explain. Insecure cipher suites and protocols being present on a system means the system is capable of negotiating deprecated algorithms or protocols. If a system connects to another server that only supports those deprecated options, it’s possible the connection could use them.
+
+These settings are controlled through the Windows registry. The remediation itself is straightforward. We developed a PowerShell script that disables all insecure protocols and cipher suites and ensures that only currently accepted, secure standards are enabled.
+
+CAB Member:
+That makes sense, but what happens if something goes wrong? Do we have a rollback plan in place?
+
+Risk Management Representative:
+Yes, absolutely. We’re using a tiered deployment approach. This starts with a small pilot group, followed by pre-production, and then full production deployment.
+
+In addition, each remediation includes an automated rollback script. If any unexpected issues arise, the rollback script restores the original registry settings, including the previous protocols and cipher suites.
+
+CAB Member:
+That sounds reasonable. Since the changes are limited to registry updates, I’m not too concerned.
+
+Risk Management Representative:
+Exactly. The scope is limited, and the rollback is fully automated.
+
+CAB Chair:
+Are there any additional questions from the board?
+
+[No further questions.]
+
+CAB Chair:
+Alright, that concludes this item and wraps up this week’s CAB meeting. We’ll see everyone next week.
