@@ -1,0 +1,38 @@
+# Mock Meeting: Policy Buy-In (Stakeholders)
+
+## Context
+In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their ability to meet remediation timelines. Feedback from stakeholders leads to adjustments, including extending the critical remediation window from 48 hours to one week, supporting a more collaborative and realistic implementation.
+
+---
+
+## Transcript
+
+**Policy Lead:**  
+Good morning. How has everything been lately? I know the past few weeks have been busy for everyone.
+
+**Server Team Representative:**  
+Good morning. It has been a bit hectic, but we’re managing. Thanks for checking in. I reviewed the policy draft, and overall it makes sense. That said, with our current staffing levels, we’re not able to meet the more aggressive remediation timelines, especially the 48-hour window for critical vulnerabilities.
+
+**Policy Lead:**  
+That’s completely understandable. The timeline is fairly aggressive, particularly at the start. One option could be extending the critical remediation window to one week as a compromise. We could still reserve the 48-hour requirement for truly severe or zero-day vulnerabilities.
+
+**Server Team Representative:**  
+That sounds reasonable, and we appreciate the flexibility. Would there also be some leeway early on while we adjust to the remediation and patching process, at least for the first few months?
+
+**Policy Lead:**  
+Yes, absolutely. Once the policy is finalized, the program will officially begin, but the plan is to allow all departments roughly six months to adapt and become comfortable with the new process.
+
+**Server Team Representative:**  
+That seems fair. We’ll do our best to meet the expectations. I appreciate being included in the decision-making process. It helps us feel like we’re contributing to the solution.
+
+**Policy Lead:**  
+Of course. This is a shared effort, and we appreciate your cooperation.
+
+**Server Team Representative:**  
+Thank you for keeping the meeting brief.
+
+**Policy Lead:**  
+Short meetings are always the best. Take care.
+
+**Server Team Representative:**  
+You too.
