@@ -1,0 +1,64 @@
+Context
+
+This mock meeting represents a follow-up discussion after the initial discovery scan. The purpose of the meeting is to review scan performance, confirm there were no operational impacts, discuss key vulnerability findings, and align on remediation planning and next steps.
+
+Transcript
+
+Vulnerability Management Lead:
+Good morning. How are you doing today?
+
+Server Team Representative:
+Not bad for a Monday. How about yourself?
+
+Vulnerability Management Lead:
+Still alive, so I can’t complain. Before we dive into the vulnerability findings, how did the scan go on your end? Did you notice any outages or resource overutilization?
+
+Server Team Representative:
+The scan went well. We monitored the servers throughout the process, and aside from an increase in open connections, we wouldn’t have known a scan was taking place.
+
+Vulnerability Management Lead:
+That’s good to hear. We’ll continue monitoring going forward, but I don’t expect any resource utilization issues. Would you mind if I go over the vulnerability findings now?
+
+Server Team Representative:
+Not at all. Go ahead.
+
+Vulnerability Management Lead:
+I’ll briefly share my screen. The majority of the findings are related to Wireshark being installed and significantly out of date. There are multiple vulnerabilities tied to that software.
+
+One additional concern is that the local guest account on the servers is a member of a group, and upon further review, it appears to belong to the local administrators group. I’m not sure why that configuration exists.
+
+Some of the other findings, such as those related to Microsoft Edge Chromium, may be automatically resolved through Windows Updates. The same may apply to a few additional items.
+
+The self-signed certificate finding is not a concern, as it is expected behavior. However, the medium-strength cipher suites and the use of TLS 1.0 and 1.1 are issues, as those protocols and cipher suites are deprecated.
+
+The primary remediation focus areas appear to be removing Wireshark, disabling deprecated protocols and cipher suites, and correcting the guest account configuration.
+
+Server Team Representative:
+That’s very interesting. The good news is that most of our servers likely share the same vulnerabilities, which should simplify remediation.
+
+Vulnerability Management Lead:
+That’s actually a positive outcome, since a uniform configuration makes remediation more efficient. Do you foresee any issues with addressing the cipher suites or deprecated protocols?
+
+Server Team Representative:
+I don’t expect any issues. We’ll run those changes through the Change Control Board. Uninstalling Wireshark and correcting the guest account shouldn’t be a problem, as those configurations shouldn’t exist on the servers anyway. I’ll need to follow up with our CIS administrators on that.
+
+Vulnerability Management Lead:
+That’s good news. I’ll start building remediation packages to make the process easier when it’s time to apply fixes.
+
+Server Team Representative:
+That sounds great. One question: do you already have something in place to handle Windows Update-related vulnerabilities, such as patch management?
+
+Vulnerability Management Lead:
+Yes, we’re not concerned about those. Windows Updates should resolve those findings automatically by next week. Patch management is already in place.
+
+Server Team Representative:
+Excellent.
+
+Vulnerability Management Lead:
+I’ll begin researching the best remediation approaches and follow up before the next Change Control Board meeting.
+
+Server Team Representative:
+Sounds good. Talk to you soon.
+
+Vulnerability Management Lead:
+Talk to you soon.
