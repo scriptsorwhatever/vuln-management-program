@@ -48,8 +48,6 @@ This phase focuses on drafting a Vulnerability Management Policy as a starting p
 
 In this phase, a meeting with the server team introduces the draft Vulnerability Management Policy and assesses their capability to meet remediation timelines. Feedback leads to adjustments, like extending the critical remediation window from 48 hours to one week, ensuring collaborative implementation.
 
-<a href='https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20Meeting%3A%20Policy%20Buy-In%20(Stakeholders)' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/549d21f4-26c2-412d-9117-d7b6835aedbf"></a>
-
 [Stakeholder Policy Buy-In Meeting](https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20Meeting%3A%20Policy%20Buy-In%20(Stakeholders))
 
 ---
@@ -64,8 +62,6 @@ After gathering feedback from the server team, the policy is revised, addressing
 ### Step 4) Mock Meeting: Initial Scan Permission (Server Team)
 
 The team collaborates with the server team to initiate scheduled credential scans. A compromise is reached to scan a single server first, monitoring resource impact, and using just-in-time Active Directory credentials for secure, controlled access.  
-
-<a href='https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20Meeting%3A%20Initial%20Scan%20Permission%20(Server%20Team)' target="_"><img width="600" alt="image" src="https://github.com/user-attachments/assets/31fe8d0f-636b-475b-8d5a-a2795c183f86"></a>
 
 [Initial Discovery Scan](https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20Meeting%3A%20Initial%20Scan%20Permission%20(Server%20Team))
 
@@ -107,17 +103,13 @@ The server team received remediation scripts and scan reports to address key vul
 
 The server team reviewed vulnerability scan results, identifying outdated software, insecure accounts, and deprecated protocols. The remediation packages were prepared for submission to the Change Control Board (CAB). 
 
-<a href="https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20Meeting%3A%20Post-Initial%20Discovery%20Scan%20(Server%20Team)" target="_"><img width="600" src="https://github.com/user-attachments/assets/03027c66-5f7c-42d0-b6dd-09d053c040b1"/></a>
-
 [Meeting](https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20Meeting%3A%20Post-Initial%20Discovery%20Scan%20(Server%20Team))
 
 ---
 
 ### Step 9) Mock CAB Meeting: Implementing Remediations
 
-The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.  
-
-<a href="https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20CAB%20Meeting%3A%20Implementing%20Remediations" target="_"><img width="600" src="https://github.com/user-attachments/assets/07164e63-fbce-471a-b469-29a6d41b7bb8"/></a>
+The Change Control Board (CAB) reviewed and approved the plan to remove insecure protocols and cipher suites. The plan included a rollback script and a tiered deployment approach.
 
 [Meeting](https://github.com/scriptsorwhatever/vuln-management-program/blob/main/meetings/Mock%20CAB%20Meeting%3A%20Implementing%20Remediations)
 
